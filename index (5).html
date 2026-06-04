@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ataque Cocodrilo Bombardino</title>
+    <link rel="stylesheet" href="principal.css">
+    <body>
+        <script src="principal.js" ></script>
+        <h1>Ataque Cocodrilo Bombardino</h1>
+        <p>Resolviendo las ecuaciones deberas descubrir que casas han sido bombardeadas con por Cocodrilo  Bombardino</p>
+        <img src="bombardino.jpg" alt="Cocodrilo Bombardino" width="200">
+        <table id="tablero">
+            <tr>
+                <td>8</td>
+                <td id="81" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="82" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="83" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="84" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="85" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="86" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="87" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="88" onclick="descativar(this.id)"><img src="casita.png"></td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td id="71" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="72" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="73" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="74" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="75" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="76" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="77" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="78" onclick="descativar(this.id)"><img src="casita.png"></td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td id="61" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="62" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="63" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="64" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="65" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="66" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="67" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="68" onclick="descativar(this.id)"><img src="casita.png"></td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td id="51" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="52" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="53" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="54" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="55" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="56" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="57" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="58" onclick="descativar(this.id)"><img src="casita.png"></td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td id="41" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="42" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="43" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="44" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="45" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="46" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="47" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="48" onclick="descativar(this.id)"><img src="casita.png"></td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td id="31" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="32" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="33" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="34" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="35" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="36" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="37" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="38" onclick="descativar(this.id)"><img src="casita.png"></td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td id="21" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="22" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="23" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="24" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="25" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="26" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="27" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="28" onclick="descativar(this.id)"><img src="casita.png"></td>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td id="11" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="12" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="13" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="14" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="15" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="16" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="17" onclick="descativar(this.id)"><img src="casita.png"></td>
+                <td id="18" onclick="descativar(this.id)"><img src="casita.png"></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>1</td>
+                <td>2</td>
+                <td>3</td>
+                <td>4</td>
+                <td>5</td>
+                <td>6</td>
+                <td>7</td>
+                <td>8</td>
+            </tr>
+        </table>
+        <br>
+        <div id="ecuaX1">
+
+        </div>
+        <br>
+        <div id="ecuaY1">
+
+        </div>
+        <br>
+        <div id="ecuaX2">
+
+        </div>
+        <br>
+        <div id="ecuaY2">
+
+        </div>
+        <br>
+        <div id="ecuaX3">
+
+        </div>
+        <br>
+        <div id="ecuaY3">
+
+        </div>
+    </body>
+</html>

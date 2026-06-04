@@ -1,0 +1,28 @@
+table {
+    justify-content: center;
+    border-collapse: collapse;
+    width: 100%;
+    border: red solid;
+
+}
+
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    justify-content: center;
+}
+
+ h1 {
+    text-align: center;
+}
+
+td {
+    border: red 1px solid;
+    text-align: center;
+    padding: 8px;
+}
+
+ td > img {
+    width: 20px;
+    height: 20px;
+}
