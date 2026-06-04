@@ -18,68 +18,28 @@ function generarIncognitas(){
     return incognitas;
 }
 function generarEcuacion(x, id , letra) {
-    let ecuacion = "";
-    let total = Math.floor(Math.random() * 5)*x;
-    let restante = total;
     let simbolo = simboloAleatorio();
-    let primero = 0;
-    let igual = false;
-    let contador = 0;
-    let conLetra = false;
-    
-    do {
-        primero = Math.floor(Math.random() * 10)
-    }   while (primero * x > restante || primero == 0);
-    ecuacion += primero + letra + simbolo;
-    if (simbolo == " - "){
-        restante -= primero * x;
+    let primero = Math.floor(Math.random() * 9) + 1;
+    let segundo = Math.floor(Math.random() * 9) + 1;
+    let tercero = Math.floor(Math.random() * 9) + 1;
+    let cuarto = 0;
+    if (simbolo == " + " ){
+        cuarto = primero*x + segundo - tercero*x;
     } else {
-        restante += primero * x;
+        cuarto = primero*x - segundo - tercero*x;
     }
-    alert("hola"+contador++);
-    contador++;
-    do {
-        if  (restante > x && contador < 5){
-            let num = Math.floor(Math.random() * 10) + 1;
-            while (num > restante ) {
-                num = Math.floor(Math.random() * 10) + 1;
-            }
-            simbolo = Math.random() < 0.5 ? " + " : " - ";
-            if (contador < 5 && !conLetra){
-                if (simbolo == " - "){
-                    restante -= num * x;
-                    ecuacion += num + letra + simbolo;
-                } else {
-                    restante += num * x;
-                    ecuacion += num + letra + simbolo;
-                }
-                
-            }
-        contador++;
-        if (!igual){
-            if (Math.random() < 0.5 ? true : false){
-                ecuacion += " = "+ restante;
-                igual = true;
-            }
-        }
 
-        } else if (restante == x || contador == 5){
-            num = restante;
-
-            if (igual){
-                ecuacion += " = ";
-            } else {
-                ecuacion += " = ";
-            }
-
-            ecuacion += num;
-        }
-    } while (restante > 0);
-    document.getElementById(id).innerHTML = ecuacion;
+    document.getElementById(id).innerHTML = primero + letra+ " "+ simbolo + segundo+ " = " + tercero + letra+ finalEcua(cuarto);
 }
 
-function conLetra(){
-    return Math.random() < 0.5 ? true : false;
+function finalEcua (num){
+    if (num > 0){
+        return " + " + num;
+    } else if (num < 0){
+        return " - " + Math.abs(num);
+    } else {
+        return "";
+    }
 }
 
 function simboloAleatorio() {
